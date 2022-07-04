@@ -87,6 +87,8 @@
           <button
             class="btn btn-outline-success"
             type="submit"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick="horoscopeCheck()"
           >
             Search
@@ -97,13 +99,15 @@
       <div class="text-center my-3">
         <p id="datepara"></p>
       </div>
-      <div>
+      <!-- <div>
         <p id="horoscopeContent" class="text-center"></p>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "Aries"'
           >
             <div class="card">
@@ -114,6 +118,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "TAURES"'
           >
             <div class="card">
@@ -124,6 +130,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "Gemini"'
           >
             <div class="card">
@@ -134,6 +142,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "CANCER"'
           >
             <div class="card">
@@ -144,6 +154,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "LEO"'
           >
             <div class="card">
@@ -154,6 +166,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "VIRGO"'
           >
             <div class="card">
@@ -164,6 +178,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "LIBRA"'
           >
             <div class="card">
@@ -174,6 +190,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "SCORPIO"'
           >
             <div class="card">
@@ -184,6 +202,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "SAGITTARIUS"'
           >
             <div class="card">
@@ -194,6 +214,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "CAPRICORN"'
           >
             <div class="card">
@@ -204,6 +226,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "AQUARIUS"'
           >
             <div class="card">
@@ -214,6 +238,8 @@
         <div class="col-md-3">
           <button
             type="button w-100"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
             onclick='document.getElementById("horoscopeContent").innerHTML = "PISCES"'
           >
             <div class="card">
@@ -222,6 +248,42 @@
           </button>
         </div>
       </div>
+      <!-- Modal start -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Your Horoscope</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body"><p id="horoscopeContent"></p></div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <!-- <button type="button" class="btn btn-primary">
+                Save changes
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal end -->
     </div>
 
     <script
