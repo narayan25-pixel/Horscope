@@ -89,7 +89,7 @@
             type="submit"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
-            onclick="horoscopeCheck()"
+            onclick="find()"
           >
             Search
           </button>
@@ -267,7 +267,10 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body"><p id="horoscopeContent"></p></div>
+            <div class="modal-body">
+              <p id="horoscopeImage"></p>
+              <p id="horoscopeContent"></p>
+            </div>
             <div class="modal-footer">
               <button
                 type="button"
