@@ -30,3 +30,16 @@ body {
 .btn-close {
   color: #ff1493;
 }
+.card-body {
+  background-color: #ff1493;
+  color: white;
+}
+.card {
+  border: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
