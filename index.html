@@ -14,279 +14,314 @@
     <title>Horoscope</title>
   </head>
   <body>
-    <div class="container">
-      <!-- nav bar start -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- nav bar end -->
-      <div class="my-2">
-        <h1>Horoscope</h1>
-        <h5>Horoscopes and Astrology reports Online</h5>
-
-        <div class="d-flex">
-          <input
-            class="form-control me-2"
-            id="dateOfBirthClass"
-            type="date"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button
-            class="btn btn-outline-success"
-            type="submit"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick="find()"
-          >
-            Search
-          </button>
-        </div>
-      </div>
-
-      <div class="text-center my-3">
-        <p id="datepara"></p>
-      </div>
-      <!-- <div>
-        <p id="horoscopeContent" class="text-center"></p>
-      </div> -->
-      <div class="row">
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "Aries"'
-          >
-            <div class="card">
-              <div class="card-body">Aries</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "TAURES"'
-          >
-            <div class="card">
-              <div class="card-body">TAURES</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "Gemini"'
-          >
-            <div class="card">
-              <div class="card-body">Gemini</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "CANCER"'
-          >
-            <div class="card">
-              <div class="card-body">CANCER</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "LEO"'
-          >
-            <div class="card">
-              <div class="card-body">LEO</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "VIRGO"'
-          >
-            <div class="card">
-              <div class="card-body">VIRGO</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "LIBRA"'
-          >
-            <div class="card">
-              <div class="card-body">LIBRA</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "SCORPIO"'
-          >
-            <div class="card">
-              <div class="card-body">SCORPIO</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "SAGITTARIUS"'
-          >
-            <div class="card">
-              <div class="card-body">SAGITTARIUS</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "CAPRICORN"'
-          >
-            <div class="card">
-              <div class="card-body">CAPRICORN</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "AQUARIUS"'
-          >
-            <div class="card">
-              <div class="card-body">AQUARIUS</div>
-            </div>
-          </button>
-        </div>
-        <div class="col-md-3">
-          <button
-            type="button w-100"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            onclick='document.getElementById("horoscopeContent").innerHTML = "PISCES"'
-          >
-            <div class="card">
-              <div class="card-body">PISCES</div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <!-- Modal start -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Your Horoscope</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p id="horoscopeImage"></p>
-              <p id="horoscopeContent"></p>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <!-- <button type="button" class="btn btn-primary">
-                Save changes
-              </button> -->
+    <div class="container-fluid">
+      <div class="container">
+        <!-- nav bar start -->
+        <nav class="navbar navbar-expand-lg navbarcolor">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
+        </nav>
+        <!-- nav bar end -->
+        <div class="my-2 text-center">
+          <h1>Horoscope</h1>
+          <h5>Horoscopes and Astrology reports Online</h5>
+
+          <div class="d-flex">
+            <input
+              class="form-control me-2"
+              id="dateOfBirthClass"
+              type="date"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success searchButton"
+              type="submit"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick="find()"
+            >
+              Search
+            </button>
+          </div>
         </div>
+
+        <div class="text-center my-3">
+          <p id="datepara"></p>
+        </div>
+        <!-- <div>
+              <p id="horoscopeContent" class="text-center"></p>
+            </div> -->
+        <div class="row">
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "Aries"'
+            >
+              <div class="card">
+                <img src="./images/Aries.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">Aries</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "TAURES"'
+            >
+              <div class="card">
+                <img src="./images/taurus.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">TAURES</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "Gemini"'
+            >
+              <div class="card">
+                <img
+                  src="./images/gemini.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">Gemini</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "CANCER"'
+            >
+              <div class="card">
+                <img
+                  src="./images/Cancer.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">CANCER</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "LEO"'
+            >
+              <div class="card">
+                <img src="./images/leo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">LEO</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "VIRGO"'
+            >
+              <div class="card">
+                <img src="./images/virgo.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">VIRGO</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "LIBRA"'
+            >
+              <div class="card">
+                <img src="./images/libra.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">LIBRA</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "SCORPIO"'
+            >
+              <div class="card">
+                <img
+                  src="./images/scorpio.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">SCORPIO</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "SAGITTARIUS"'
+            >
+              <div class="card">
+                <img
+                  src="./images/sagittarius.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">SAGITTARIUS</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "CAPRICORN"'
+            >
+              <div class="card">
+                <img
+                  src="./images/capricon.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">CAPRICORN</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "AQUARIUS"'
+            >
+              <div class="card">
+                <img
+                  src="./images/aquaris.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">AQUARIUS</div>
+              </div>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button
+              type="button w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              onclick='document.getElementById("horoscopeContent").innerHTML = "PISCES"'
+            >
+              <div class="card">
+                <img src="./images/pisces.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">PISCES</div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- Modal start -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content modalsection">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Your Horoscope
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p id="horoscopeImage"></p>
+                <p id="horoscopeContent"></p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <!-- <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal end -->
       </div>
-      <!-- Modal end -->
     </div>
 
     <script

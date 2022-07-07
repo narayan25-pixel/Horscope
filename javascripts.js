@@ -82,7 +82,7 @@ function findSign(d) {
   ];
   var month = date.getMonth();
   var day = date.getDate();
-  if (month === 0 && day <= 20) {
+  if (month == 0 && day <= 20) {
     month = 11;
   } else if (day < days[month]) {
     month--;
