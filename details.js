@@ -94,7 +94,7 @@ function findSign(d) {
 
 function find2() {
   // var val = document.getElementById("dateOfBirthClass").value;
-  let val = localStorage.getItem("inputDateofBirth");
+  let val = window.localStorage.getItem("inputDateofBirth");
   console.log(val);
   var sign = findSign(val);
   console.log(sign);

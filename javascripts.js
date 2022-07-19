@@ -8,5 +8,5 @@ document.getElementById("datepara").innerHTML = today;
 
 function find() {
   var val = document.getElementById("dateOfBirthClass").value;
-  localStorage.setItem("inputDateofBirth", val);
+  window.localStorage.setItem("inputDateofBirth", val);
 }
