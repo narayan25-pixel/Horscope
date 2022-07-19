@@ -27,24 +27,24 @@
           <h1>Horoscope</h1>
           <h5>Horoscopes and Astrology reports Online</h5>
 
-          <div class="d-flex">
-            <input
-              class="form-control me-2"
-              id="dateOfBirthClass"
-              type="date"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success searchButton"
-              type="submit"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              onclick="find()"
-            >
-              Search
-            </button>
-          </div>
+          <form action="./details.html">
+            <div class="d-flex">
+              <input
+                class="form-control me-2"
+                id="dateOfBirthClass"
+                type="date"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success searchButton"
+                type="submit"
+                onclick="find()"
+              >
+                Search
+              </button>
+            </div>
+          </form>
         </div>
 
         <div class="text-center my-3">
@@ -161,48 +161,9 @@
         >
           <div class="text-center p-4">© 2022 Copyright:</div>
         </footer>
+        <p id="description"></p>
+        <img id="imageId" src="" alt="" />
         <!-- footer ends -->
-        <!-- Modal start -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content modalsection">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                  Your Horoscope
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <p id="horoscopeImage"></p>
-                <p id="horoscopeContent"></p>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-bs-dismiss="modal"
-                >
-                  Close
-                </button>
-                <!-- <button type="button" class="btn btn-primary">
-                      Save changes
-                    </button> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal end -->
       </div>
     </div>
 
@@ -213,5 +174,6 @@
     ></script>
 
     <script src="./javascripts.js"></script>
+    <script src="./details.js"></script>
   </body>
 </html>
